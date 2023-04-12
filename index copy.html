@@ -12,10 +12,10 @@
       </div>
       <div class="chat-messages"></div>
       <div class="chat-input">
-        <input type="text" placeholder="Escribe tu mensaje aquí">
-        <button>Enviar</button>
+        <input id="input" type="text" placeholder="Escribe tu mensaje aquí">
+        <button id="send-btn">Enviar</button>
         <div class="btn-mas">
-          <div class="mas" data-toggle="modal" data-target="#modal">+</div>
+          <div class="mas">+</div>
           <div class="modal" id="modal">
             <div class="modal-content">
               <button class="modal-close">&times;</button>
@@ -33,11 +33,15 @@
     <aside class="chat-aside">
       <div class="fot-chat">
         <img class="image-group" src="https://cn.i.cdn.ti-platform.com/content/530/showpage/clarence/es/clarence-200x200.png" alt="Group Image">
-      <h2>Group Name</h2>
+        <h2>Group Name</h2>
       </div>
     </aside>
   </div>
 
+  <!-- Cargar el archivo de tu aplicación -->
   <script src="js/app.js"></script>
+  <script src="socket.io/socket.io.js"></script>
+
+
 </body>
 </html>
